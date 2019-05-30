@@ -1,8 +1,8 @@
 import React from 'react'
-import HelpWidget from './widget'
-import logo from './logo.svg'
-import './App.scss'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import HelpWidget from '../widget'
+import logo from './logo.svg'
+import './index.scss'
 import {
   faCommentAlt,
   faSearch,

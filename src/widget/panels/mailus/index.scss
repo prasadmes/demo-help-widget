@@ -1,0 +1,33 @@
+
+.custom-file-input {
+  position: relative;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin: 0;
+  opacity: 0;
+}
+
+.custom-file-tag {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin-bottom: 0;
+  &:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+  .custom-file-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: calc(1.5em + 0.75rem + 2px);
+    line-height: 1.5;
+  }
+}
+
+#button-mailus {
+  position: absolute;
+  right: 0;
+}
