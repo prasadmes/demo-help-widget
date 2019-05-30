@@ -1,0 +1,103 @@
+@import "./dialog.scss";
+@import "./tab.scss";
+
+.panel {
+  background: #eee;
+  height: 400px;
+  min-width: 850px;
+  padding: 30px 20px;
+  &.faq-panel {
+    padding: 0
+  }
+}
+
+.btn {
+  &.btn-primary {
+    color: #fff;
+    background: #5083b9;
+    padding: 4px 12px;
+  }
+}
+
+.icon {
+  margin: 0 5px;
+}
+
+.custom-file-input {
+  position: relative;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin: 0;
+  opacity: 0;
+}
+
+.custom-file-tag {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin-bottom: 0;
+  &:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+  .custom-file-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: calc(1.5em + 0.75rem + 2px);
+    line-height: 1.5;
+  }
+}
+
+#button-mailus {
+  position: absolute;
+  right: 0;
+}
+
+
+//FAQ
+
+.faq-panel{
+  display: flex;
+  .prefer-email {
+    background: #eee;
+    border-right: 1px solid #000;
+    height: 100%;
+    padding: 150px 50px;
+    width: 400px;
+  }
+  .faq-section {
+    padding: 30px 20px;
+    width: 800px;
+    #searchBar {
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .input-group-text {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: #fff;
+    }
+  }
+}
+
+.faq-section {
+  .card {
+    background: transparent;
+    text-align: center;
+    border-color: transparent;
+    color: #007bff;
+    &:hover {
+      background: #fff;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .icon {
+      display: block;
+      margin: auto;
+      font-size: 1.5rem;
+    }
+  }
+}
