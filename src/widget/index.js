@@ -10,6 +10,18 @@ import './index.scss'
 
 function HelpWidget({ show, onDismiss }) {
   const [showTabAt, setShowTabAt] = React.useState(1)
+  const searchRef = React.useRef()
+  const subjectRef = React.useRef()
+  React.useEffect(() => {
+    onTabChange(showTabAt)
+  }, [showTabAt])
+  function onTabChange(index) {
+    if (index === 1) {
+      searchRef.current && searchRef.current.focus()
+    } else if (index === 2) {
+      subjectRef.current && subjectRef.current.focus()
+    }
+  }
   return (
     <Dialog isOpen={show} onDismiss={onDismiss}>
       <Tabs
@@ -47,10 +59,10 @@ function HelpWidget({ show, onDismiss }) {
             <LiveChat />
           </TabPanel>
           <TabPanel>
-            <Faq showMailUs={() => setShowTabAt(2)} />
+            <Faq searchRef={searchRef} showMailUs={() => setShowTabAt(2)} />
           </TabPanel>
           <TabPanel>
-            <MailUs />
+            <MailUs subjectRef={subjectRef} />
           </TabPanel>
         </TabPanels>
       </Tabs>

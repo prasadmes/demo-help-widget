@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { persistToStorage } from './operations'
 import './index.scss'
 
-export default function MailUs() {
+export default function MailUs({ subjectRef }) {
   const [hasSentMail, setHasSentMail] = React.useState(false)
   const [subject, setSubject] = React.useState('')
   const [message, setMessage] = React.useState('')
+
   function onFormSubmit(event) {
     event.preventDefault()
     persistToStorage({ subject, message })
@@ -41,6 +42,7 @@ export default function MailUs() {
           </label>
           <input
             type="text"
+            ref={subjectRef}
             className="form-control"
             placeholder="Subject"
             onChange={e => setSubject(e.target.value)}

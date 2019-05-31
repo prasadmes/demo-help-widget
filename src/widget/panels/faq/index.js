@@ -34,7 +34,7 @@ function PreferEmail({ showMailUs }) {
   )
 }
 
-export default function Faq({ showMailUs }) {
+export default function Faq({ showMailUs, searchRef }) {
   return (
     <div className="panel faq-panel">
       <PreferEmail showMailUs={showMailUs} />
@@ -51,6 +51,7 @@ export default function Faq({ showMailUs }) {
             </div>
             <input
               type="text"
+              ref={searchRef}
               className="form-control"
               id="searchBar"
               placeholder="What can you help you with? Start typing your question..."
