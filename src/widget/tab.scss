@@ -10,10 +10,6 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom: none;
-  z-index: 4;
-  &:nth-last-child(2) {
-    margin-right: 40px;
-  }
   &[data-selected] {
     background: #fff;
     z-index: 5;
@@ -23,9 +19,7 @@
     color: #fff;
     // transform: none;
     border-radius: 0;
-    position: absolute;
     right: 0;
     z-index: 3;
-    padding-left: 40px;
   }
 }
