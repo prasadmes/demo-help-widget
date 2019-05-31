@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import updateMailUsContents from '../../../utils/updateMailUsContents'
+import { persistToStorage } from './operations'
 import './index.scss'
 
 export default function MailUs() {
@@ -9,7 +9,7 @@ export default function MailUs() {
   const [message, setMessage] = React.useState('')
   function onFormSubmit(event) {
     event.preventDefault()
-    updateMailUsContents({ subject, message })
+    persistToStorage({ subject, message })
     setHasSentMail(true)
   }
   return (
