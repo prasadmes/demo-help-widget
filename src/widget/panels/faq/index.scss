@@ -1,0 +1,43 @@
+
+.faq-panel{
+  display: flex;
+  .prefer-email {
+    background: #eee;
+    border-right: 1px solid #000;
+    height: 100%;
+    padding: 150px 50px;
+    width: 400px;
+  }
+  .faq-section {
+    padding: 30px 20px;
+    width: 800px;
+    #searchBar {
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .input-group-text {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: #fff;
+    }
+  }
+}
+
+.faq-section {
+  .card {
+    background: transparent;
+    text-align: center;
+    border-color: transparent;
+    color: #007bff;
+    &:hover {
+      background: #fff;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .icon {
+      display: block;
+      margin: auto;
+      font-size: 1.5rem;
+    }
+  }
+}

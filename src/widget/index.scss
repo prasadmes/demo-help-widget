@@ -1,0 +1,24 @@
+@import "./dialog.scss";
+@import "./tab.scss";
+
+.panel {
+  background: #eee;
+  height: 400px;
+  min-width: 850px;
+  padding: 30px 20px;
+  &.faq-panel {
+    padding: 0
+  }
+}
+
+.btn {
+  &.btn-primary {
+    color: #fff;
+    background: #5083b9;
+    padding: 4px 12px;
+  }
+}
+
+.icon {
+  margin: 0 5px;
+}
